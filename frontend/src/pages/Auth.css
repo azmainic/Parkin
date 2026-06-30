@@ -1,0 +1,139 @@
+/* Social Login Buttons */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  color: white;
+}
+
+.social-btn svg {
+  font-size: 20px;
+}
+
+.social-btn.google {
+  background: #ea4335;
+}
+
+.social-btn.google:hover {
+  background: #d33426;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 67, 53, 0.3);
+}
+
+.social-btn.microsoft {
+  background: #00a4ef;
+}
+
+.social-btn.microsoft:hover {
+  background: #0087d6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 164, 239, 0.3);
+}
+
+.social-btn.apple {
+  background: #1a1a2e;
+}
+
+.social-btn.apple:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(26, 26, 46, 0.3);
+}
+
+.social-btn.facebook {
+  background: #1877f2;
+}
+
+.social-btn.facebook:hover {
+  background: #1664d9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
+}
+
+/* Divider */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #9ca3af;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.auth-divider span {
+  padding: 0 16px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Input with icon */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+
+.input-with-icon input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Auth error */
+.auth-error {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .social-btn {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+  
+  .social-btn svg {
+    font-size: 16px;
+  }
+}
